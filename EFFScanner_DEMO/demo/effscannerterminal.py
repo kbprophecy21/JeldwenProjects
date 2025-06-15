@@ -6,7 +6,8 @@ import os
 
 folder_path = r"c:\Users\14704\OneDrive\Desktop\All Projects\Wild_Projects\Jeldwen_Projects\JeldwenProjects\Data\LIS_Files"
 
-print("Enter the Schedule Batch ID: ")
+print("Enter the Schedule Batch ID: ")   #example data: 0609250160002
+
 batch_id = input().strip()
 
 # Extract press info
@@ -36,7 +37,9 @@ for file in os.listdir(folder_path):
                 if group_press_A in search_range and group_press_B in search_range:
                     print(f"✅ Match found for '{group_press_A}' or '{group_press_B}'")
                     print("Matched Line:")
-                    print(line.strip())
+                    ticket_data = line.strip()
+                    print(ticket_data)
+                    # Here you can add further processing of the matched line if needed
                     found = True
                     break
 
