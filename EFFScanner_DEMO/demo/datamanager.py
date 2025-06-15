@@ -1,8 +1,11 @@
 import pandas as pd
 
-PATH = './Data/sample.txt'
+# This script reads a CSV file and prints the first few rows of the DataFrame.
 
-df = pd.read_csv(PATH)
 
-for index, row in df.iterrows():
-    print(row)
+file_path = r"c:\Users\14704\OneDrive\Desktop\All Projects\Wild_Projects\Jeldwen_Projects\JeldwenProjects\Data\LIS_Files\060925.LIS"
+
+
+with open(file_path, "r", encoding="utf-8") as f:
+    data = f.read()
+print(data[:100])  
