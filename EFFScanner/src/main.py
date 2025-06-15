@@ -1,7 +1,7 @@
 import os
 from tabulate import tabulate
-from EFFScanner.src.effscanner import EFFScanner
-from EFFScanner.src.dataManager import DataManager
+from effscanner import EFFScanner
+from dataManager import DataManager
 
 def print_main_menu():
     print("\n📋 EFFScanner Menu")
